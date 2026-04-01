@@ -1,0 +1,27 @@
+.task1 {
+  font-family: sans-serif;  /* background: #260F26; */
+  /* color: white; */
+}
+
+.menu {
+  margin: 0px 0 20px 0;
+  height: 20px;
+  padding: 10px 0 10px 0;  /* background: #361F36; */
+}
+
+.menu__item {  /* margin: 0 0 20px 0; */
+  padding: 10px;  
+  border: 1px solid black;
+  /* color: black; */
+}
+
+.menu__item:hover {  /* opacity: 1; */
+  background-color: hsl(60, 66%, 82%);
+  /* border-bottom-color: hsl(60, 50%, 50%); */
+}
+
+.menu__item-active,
+.menu__item-active:hover {  /* opacity: 1; */
+  background-color: hsl(120, 91%, 59%);
+  /* border-bottom-color: hsl(120, 50%, 50%); */
+}
