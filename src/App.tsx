@@ -5,6 +5,11 @@ import HomePage from './pages/HomePage';
 import FavoritesPage from './pages/FavoritesPage';
 import Navbar from './components/Navbar';
 
+// export interface interfaceProps {
+//   id?: number,
+//   inputSearch?: string
+// };
+
 export const App = () => (
   <div className="App">
     <h1>Домашнее задание к занятию «Redux Toolkit»</h1>
