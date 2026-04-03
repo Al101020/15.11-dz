@@ -5,12 +5,10 @@ import HomePage from './pages/HomePage';
 import FavoritesPage from './pages/FavoritesPage';
 import Navbar from './components/Navbar';
 
-// export interface interfaceProps {
-//   id?: number,
-//   inputSearch?: string
-// };
+import Result from './components/Result';
 
-export const App = () => (
+export const App = () => {
+  return (
   <div className="App">
     <h1>Домашнее задание к занятию «Redux Toolkit»</h1>
     <h3>Задание: Поиск фильмов по каталогу IMDb и добавление найденных фильмов в "Избранное"</h3>
@@ -20,6 +18,25 @@ export const App = () => (
         <Route path="/" element={<HomePage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
       </Routes>
+      <Result />
     </div>
   </div>
-);
+)};
+
+
+
+
+  // const appStore = useStore(AppStore);
+  // return <div>{appStore.user}</div>;
+  // console.log(store);
+
+
+{/* <ResultSearchSlice /> */}
+
+
+// import ResultSearchSlice from './ResultSearchSlice';
+
+// export interface interfaceProps {
+//   id?: number,
+//   inputSearch?: string
+// };

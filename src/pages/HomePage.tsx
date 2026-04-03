@@ -14,8 +14,7 @@ const HomePage = (): JSX.Element => {
 
   const handleSearch = () => {  // const handleSearch = (e: any) => {
     setSearch(textInput);
-    setTextInput('');
-    // console.log(search);
+    setTextInput('');    // console.log(search);
   };
 
   const apiKey = '64405bd2'; // замените на ваш API-ключ
