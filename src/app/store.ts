@@ -7,6 +7,9 @@ export type RootState = ReturnType<typeof rootReducer>;
 // const {found} = ResultSearchSlice.actions;// console.log(ResultSearchSlice.actions);
 // console.log(found); // проверка
 
+// export type RootState = ReturnType<typeof store.getState>;
+// export type AppDispatch = typeof store.dispatch;
+
 export const makeStore = (preloadedState?: Partial<RootState>) => {
   const store = configureStore({
     reducer: rootReducer,
@@ -15,8 +18,8 @@ export const makeStore = (preloadedState?: Partial<RootState>) => {
   return store;
 };
 
-export const store = makeStore();
-
+const store = makeStore();
+export default store;
 
 console.log(store);
 

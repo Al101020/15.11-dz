@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
-import { store } from './app/store';
+// import store from './app/store';
+import appStore from './app/store';
 import './index.css';
 
 const container = document.getElementById('root');
@@ -15,7 +16,7 @@ if (container) {
 
   root.render(
     <StrictMode>
-      <Provider store={store}>
+      <Provider store={appStore}>
         <BrowserRouter>
           <App />
         </BrowserRouter>
